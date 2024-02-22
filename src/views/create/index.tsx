@@ -339,7 +339,7 @@ export const CreateView: FC = ({ }) => {
             </div>
 
             <div>
-              <label className="label" for="symbol">Symbol</label>
+              <label className="label" htmlFor="symbol">Symbol</label>
               <input
                 id="symbol"
                 type="text"
@@ -350,7 +350,7 @@ export const CreateView: FC = ({ }) => {
             </div>
 
             <div>
-              <label className="label" for="description">Description</label>
+              <label className="label" htmlFor="description">Description</label>
               <textarea
                 id="description"
                 value={token.description}
@@ -360,7 +360,7 @@ export const CreateView: FC = ({ }) => {
             </div>
 
             <div>
-              <label className="label" for="amount">Supply</label>
+              <label className="label" htmlFor="amount">Supply</label>
               <input
                 id="amount"
                 type="number"
@@ -372,7 +372,7 @@ export const CreateView: FC = ({ }) => {
             </div>
 
             <div>
-              <label className="label" for="decimals">Decimals</label>
+              <label className="label" htmlFor="decimals">Decimals</label>
               <input
                 id="decimals"
                 type="number"
@@ -389,13 +389,13 @@ export const CreateView: FC = ({ }) => {
               <div>
                 {token.image && (
                   <div>
-                    <label className="label-purple" for="image">Selected Image</label>
+                    <label className="label-purple" htmlFor="image">Selected Image</label>
                     <br />
                     <img src={token.image} width={100} height={100} />
                     <br />
                   </div>
                 )}
-                <label className="label" for="image">Select Image</label>
+                <label className="label" htmlFor="image">Select Image</label>
                 <input
                   type="file"
                   name="file"
