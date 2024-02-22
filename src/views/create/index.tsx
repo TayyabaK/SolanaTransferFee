@@ -328,7 +328,7 @@ export const CreateView: FC = ({ }) => {
 
           <div className="flex flex-col space-y-4">
             <div>
-              <label className="label" for="name">Name</label>
+              <label className="label" htmlFor="name">Name</label>
               <input
                 id="name"
                 type="text"
