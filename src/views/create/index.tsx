@@ -407,12 +407,12 @@ export const CreateView: FC = ({ }) => {
 
             <div className="flex flex-col space-y-2">
               <div className="flex flex-row space-x-2">
-                <input type="checkbox" id="fStkSuth" name="fStkSuth" value={token.fStkAuth} onChange={(e) => handleFormfieldchange("fStkAuth", e)} />
+                <input type="checkbox" id="fStkSuth" name="fStkSuth" onChange={(e) => handleFormfieldchange("fStkAuth", e)} />
                 <label className="label">Freeze Staking Authority</label>
               </div>
 
               <div className="flex flex-row space-x-2">
-                <input type="checkbox" id="fStkMint" name="fStkMint" value={token.fMintAuth} onChange={(e) => handleFormfieldchange("fStkAuth", e)} />
+                <input type="checkbox" id="fStkMint" name="fStkMint" onChange={(e) => handleFormfieldchange("fStkAuth", e)} />
                 <label className="label">Freeze Minting Authority</label>
               </div>
             </div>
