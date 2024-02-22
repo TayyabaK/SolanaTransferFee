@@ -313,74 +313,74 @@ export const CreateView: FC = ({ }) => {
 
   return (
     <div>
-      <div class="card-wallet-balance mx-auto p-4">
+      <div className="card-wallet-balance mx-auto p-4">
         {wallet && (
-          <div class="flex flex-row justify-center">
-            <div class="text-2xl text-slate-300">
+          <div className="flex flex-row justify-center">
+            <div className="text-2xl text-slate-300">
               Wallet Balance: {(balance || 0).toLocaleString()} SOL
             </div>
           </div>
         )}
       </div>
 
-      <div class="card mx-auto p-4">
-        <div class="flex flex-col justify-center items-center space-y-4">
+      <div className="card mx-auto p-4">
+        <div className="flex flex-col justify-center items-center space-y-4">
 
-          <div class="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-4">
             <div>
-              <label class="label" for="name">Name</label>
+              <label className="label" for="name">Name</label>
               <input
                 id="name"
                 type="text"
                 value={token.name}
                 onChange={(e) => handleFormfieldchange("name", e)}
-                class="input-style"
+                className="input-style"
               />
             </div>
 
             <div>
-              <label class="label" for="symbol">Symbol</label>
+              <label className="label" for="symbol">Symbol</label>
               <input
                 id="symbol"
                 type="text"
                 value={token.symbol}
                 onChange={(e) => handleFormfieldchange("symbol", e)}
-                class="input-style"
+                className="input-style"
               />
             </div>
 
             <div>
-              <label class="label" for="description">Description</label>
+              <label className="label" for="description">Description</label>
               <textarea
                 id="description"
                 value={token.description}
                 onChange={(e) => handleFormfieldchange("description", e)}
-                class="input-style"
+                className="input-style"
               ></textarea>
             </div>
 
             <div>
-              <label class="label" for="amount">Supply</label>
+              <label className="label" for="amount">Supply</label>
               <input
                 id="amount"
                 type="number"
                 value={token.amount}
                 onChange={(e) => handleFormfieldchange("amount", e)}
-                class="input-style"
+                className="input-style"
               />
-              {amountError && <div class="text-yellow-500">Supply should be less than 9999999999</div>}
+              {amountError && <div className="text-yellow-500">Supply should be less than 9999999999</div>}
             </div>
 
             <div>
-              <label class="label" for="decimals">Decimals</label>
+              <label className="label" for="decimals">Decimals</label>
               <input
                 id="decimals"
                 type="number"
                 value={token.decimals}
                 onChange={(e) => handleFormfieldchange("decimals", e)}
-                class="input-style"
+                className="input-style"
               />
-              {decimalsError && <div class="text-yellow-500">Decimals should be less than 10</div>}
+              {decimalsError && <div className="text-yellow-500">Decimals should be less than 10</div>}
             </div>
 
             {isLoadingImage ? (
@@ -389,36 +389,36 @@ export const CreateView: FC = ({ }) => {
               <div>
                 {token.image && (
                   <div>
-                    <label class="label-purple" for="image">Selected Image</label>
+                    <label className="label-purple" for="image">Selected Image</label>
                     <br />
                     <img src={token.image} width={100} height={100} />
                     <br />
                   </div>
                 )}
-                <label class="label" for="image">Select Image</label>
+                <label className="label" for="image">Select Image</label>
                 <input
                   type="file"
                   name="file"
                   onChange={(e) => handleImageChange(e)}
-                  class="input-style"
+                  className="input-style"
                 />
               </div>
             )}
 
-            <div class="flex flex-col space-y-2">
-              <div class="flex flex-row space-x-2">
+            <div className="flex flex-col space-y-2">
+              <div className="flex flex-row space-x-2">
                 <input type="checkbox" id="fStkSuth" name="fStkSuth" value={token.fStkAuth} onChange={(e) => handleFormfieldchange("fStkAuth", e)} />
-                <label class="label">Freeze Staking Authority</label>
+                <label className="label">Freeze Staking Authority</label>
               </div>
 
-              <div class="flex flex-row space-x-2">
+              <div className="flex flex-row space-x-2">
                 <input type="checkbox" id="fStkMint" name="fStkMint" value={token.fMintAuth} onChange={(e) => handleFormfieldchange("fStkAuth", e)} />
-                <label class="label">Freeze Minting Authority</label>
+                <label className="label">Freeze Minting Authority</label>
               </div>
             </div>
             <button
               disabled={isLoadingImage || loading}
-              class="button-style"
+              className="button-style"
               onClick={() => createToken(token)}
             >
               Create
