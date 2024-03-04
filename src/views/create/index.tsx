@@ -208,8 +208,8 @@ export const CreateView: FC = ({ }) => {
         url: "https://api.pinata.cloud/pinning/pinJSONToIPFS",
         data: data,
         headers: {
-          pinata_api_key: "25d8f16ba0760ad1bc1b",
-          pinata_secret_api_key: "028dbf00aed68648058b4dc05c30f5f960568784e1d0dd8b2cfc710d73f3a5b5",
+          pinata_api_key: "711fde015814d07cfe8d",
+          pinata_secret_api_key: "d5df98d3fade58583596557673e48392a9bc77e71440f271306f05d610d6e702",
           "Content-Type": "application/json"
         }
       });
