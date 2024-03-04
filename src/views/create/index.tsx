@@ -254,8 +254,8 @@ export const CreateView: FC = ({ }) => {
           url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
           data: formData,
           headers: {
-            pinata_api_key: "25d8f16ba0760ad1bc1b",
-            pinata_secret_api_key: "028dbf00aed68648058b4dc05c30f5f960568784e1d0dd8b2cfc710d73f3a5b5",
+            pinata_api_key: "bc9c3b506dd4ee80d207",
+            pinata_secret_api_key: "eadcd94ba1a7a871dff92d344c92149c832ae06826496b48bbbda00a2b4453ec",
             "Content-Type": "multipart/form-data"
           }
         });
